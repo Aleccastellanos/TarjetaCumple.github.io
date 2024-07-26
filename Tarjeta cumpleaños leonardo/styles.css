@@ -1,0 +1,135 @@
+body {
+    background-color: #E6E6FA;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #4B0082;
+    overflow: hidden;
+}
+
+.card {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff, #E6E6FA);
+    border: 5px solid #9370DB;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeIn 2s forwards;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 50px;
+    background: url('https://www.clipartmax.com/png/middle/299-2992016_birthday-candle-icon-free-happy-birthday-candles-icon.png') no-repeat center center;
+    background-size: contain;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #9370DB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    background-color: #D8BFD8;
+    padding: 20px;
+    border: 2px solid #BA55D3;
+    border-radius: 10px;
+    position: relative;
+    animation: showMessage 2s forwards;
+}
+
+#message:before {
+    content: 'Feliz Cumpleaños';
+    font-size: 24px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D8BFD8;
+    padding: 10px;
+    border: 2px solid #BA55D3;
+    border-radius: 10px;
+    animation: confetti 2s forwards;
+}
+
+#cake {
+    width: 100px;
+    height: 100px;
+    background: url('https://cdn.pixabay.com/photo/2017/01/31/20/06/soap-bubble-2022624_960_720.png') no-repeat center center;
+    background-size: contain;
+    margin: 20px auto;
+    animation: expandCake 2s forwards;
+}
+
+#cardText {
+    white-space: pre-line;
+    text-align: left;
+    margin-top: 20px;
+}
+
+@keyframes showMessage {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes confetti {
+    0% {top: -100px; opacity: 0;}
+    50% {top: -20px; opacity: 1;}
+    100% {top: -40px;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes expandCake {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+@keyframes explode {
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+/* Estilos para el contenedor de las fotos en portaretratos */
+#photoFrames {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.frame {
+    border: 5px solid #d6d6d6;
+    border-radius: 8px;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.frame img {
+    max-width: 200px;
+    max-height: 150px;
+    display: block;
+    border-radius: 4px;
+}
