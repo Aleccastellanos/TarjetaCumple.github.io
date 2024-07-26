@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Cumpleaños</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
+</head>
+<body>
+    <div class="card" id="card">
+        <h1 id="title">Carta para Leonardo Carranza</h1>
+        <p id="question">¿Es usted Leonardo Carranza?</p>
+        <button class="button" onclick="openCard(true)">Sí</button>
+        <button class="button" onclick="openCard(false)">No</button>
+        <div id="message" class="hidden">
+            <div id="cake" class="hidden"></div>
+            <p id="cardText">Dear Leo,
+
+            <p>Hoy es un día extraordinario y lleno de alegría, uno de esos días que celebramos con el corazón repleto de gratitud y afecto. Es tu cumpleaños, un momento especial no solo para ti, sino para todos los que tenemos la fortuna de conocerte. Quiero aprovechar esta ocasión para felicitarte sinceramente y agradecerte por ser la maravillosa persona que eres.</p>
+
+            <p>Tu bondad, atención y dedicación no pasan desapercibidas. Eres alguien que ama profundamente a su familia y siempre está dispuesto a tender una mano amiga. Aunque no siempre estoy presente tanto como me gustaría, quiero que sepas que constantemente estás en mis pensamientos y oraciones. Te envío mis mejores energías, deseando de todo corazón que siempre te encuentres bien, alegre, y que mantengas esa dedicación y compromiso que te caracterizan.</p>
+
+            <p>La vida tiene sus altibajos, pero estoy seguro de que te tiene reservadas muchas más alegrías y bendiciones. Como dice la canción: "Pronto llegará el día de mi suerte", y confío en que la vida continuará mostrándote cosas hermosas.</p>
+
+            <p>Lamentablemente, no podré estar contigo en esta fecha tan especial ya que tengo compromisos fuera de Bogotá y no podria viajar al Meta. Sin embargo, quiero que sientas mi abrazo fuerte y sincero. Recuerda siempre que aquí tienes un amigo, quizás no el más presente ni el más atento, pero un amigo al fin y al cabo. Gracias por tus mensajes, por escuchar mis dramas y locuras, y perdón por no estar siempre a la altura. Espero que podamos vernos pronto, donde sea.</p>
+
+             <p> mucho aprecio,</p>
+
+            <p> Alexander Castellanos</p>
+            <button id="finishButton" class="button hidden" onclick="finish()">Terminar</button>
+            <div id="photoFrames" class="hidden">
+                <div class="frame">
+                    <img src="img/Imagen de WhatsApp 2024-07-26 a las 10.20.10_64094b2d.jpg" alt="Foto 1">
+                </div>
+                <div class="frame">
+                    <img src="img/Imagen de WhatsApp 2024-07-26 a las 10.20.42_27abb0c8.jpg" alt="Foto 2">
+                </div>    
+                    <div class="frame">
+                        <img src="img/Imagen de WhatsApp 2024-07-26 a las 10.21.07_54066fb4.jpg" alt="Foto 3">    
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <audio id="You've Got a Friend in Me" src="music/Y2meta.app - You've Got a Friend in Me (128 kbps).mp3" loop controls></audio>
+    <script src="script.js"></script>
+</body>
+</html>
